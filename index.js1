@@ -1,0 +1,19 @@
+async function start() {
+    const { Pool } = require('pg')
+
+    const pool = new Pool({
+        user: 'postgres',
+        host: 'localhost',
+        database: 'postgres',
+        port: 5432,
+      })
+    
+    pool.query('SELECT $1::text as message', ['Hello world!'], (err, res) => {
+      if (err) {
+        throw err
+      }
+    
+      console.log('user:', res.rows[0])
+    })}
+
+start();

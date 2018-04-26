@@ -1,0 +1,16 @@
+{
+  "name": "postgres",
+  "version": "1.0.0",
+  "description": "testing postgres client and pool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Popovici",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-promise-router": "^3.0.2",
+    "pg": "^7.4.1"
+  }
+}
